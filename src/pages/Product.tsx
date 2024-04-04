@@ -75,7 +75,7 @@ export default function Product() {
   return (
     <div className={classes.container}>
       {isLoading ? (
-        <div>
+        <div className={classes.loader}>
           <CircularProgress color="inherit" />
         </div>
       ) : product ? (

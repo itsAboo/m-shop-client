@@ -31,6 +31,11 @@
   margin-top: 20px;
   font-weight: 500;
 }
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 @media screen and (max-width: 1400px) {
   .container {
     margin: 0 auto;

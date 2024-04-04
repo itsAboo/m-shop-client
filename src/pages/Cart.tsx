@@ -120,25 +120,27 @@ export default function Cart() {
                 </>
               )}
             </div>
-            <motion.div
-              variants={{
-                visible: {
-                  opacity: 1,
-                  x: 0,
-                  transition: { staggerChildren: 0.04 },
-                },
-                hidden: { opacity: 0, x: -30 },
-              }}
-              initial="hidden"
-              animate="visible"
-              exit="hidden"
-              className={classes["card-container"]}
-            >
-              {isCartItemsLoading ? (
+            {isCartItemsLoading ? (
+              <div className={classes.loader}>
                 <CircularProgress color="inherit" />
-              ) : cartItems ? (
+              </div>
+            ) : cartItems ? (
+              <motion.div
+                variants={{
+                  visible: {
+                    opacity: 1,
+                    x: 0,
+                    transition: { staggerChildren: 0.04 },
+                  },
+                  hidden: { opacity: 0, x: -30 },
+                }}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                className={classes["card-container"]}
+              >
                 <AnimatePresence>
-                  {cartItems.map((item) => (
+                  {cartItems!.map((item) => (
                     <CartCard
                       title={item.name}
                       imageUrl={item.imageUrl}
@@ -182,15 +184,17 @@ export default function Cart() {
                     />
                   ))}
                 </AnimatePresence>
-              ) : (
-                <h1>No item in cart</h1>
-              )}
-            </motion.div>
+              </motion.div>
+            ) : (
+              <h1>No item in cart</h1>
+            )}
           </div>
           {isCartItemsSuccess && cartItems?.length === 0 ? null : (
             <div ref={ref} className={classes["right-container"]}>
               {isCartLoading ? (
-                <CircularProgress color="inherit" />
+                <div className={classes.loader}>
+                  <CircularProgress color="inherit" />
+                </div>
               ) : (
                 <>
                   <h3>ORDER SUMMARY</h3>
