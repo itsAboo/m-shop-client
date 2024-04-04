@@ -1,0 +1,148 @@
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  text-align: center;
+}
+.header p {
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 70px;
+}
+.left-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 600px;
+}
+.left-container .left-header {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.left-container .left-header h3 {
+  padding-bottom: 30px;
+}
+.left-container .left-header p {
+  padding-bottom: 30px;
+  font-weight: 300;
+}
+.left-container .left-desc {
+  margin-top: 30px;
+}
+.left-container .left-desc h3 {
+  padding-bottom: 30px;
+}
+.left-container .left-desc p {
+  margin-bottom: 20px;
+}
+.loader {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  width: 100%;
+  height: 50px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-right {
+  width: 400px;
+}
+.arrow {
+  font-size: 32px;
+}
+.checkout-summary-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .container {
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 20px;
+  }
+  .main {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .left-container {
+    margin: 0;
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 10px;
+  }
+  .main {
+    width: 600px;
+    margin-top: 30px;
+  }
+  .checkout-right {
+    display: none;
+  }
+  .left-container {
+    margin: 0;
+    width: 100%;
+  }
+  .checkout-summary-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  .main {
+    width: 80%;
+  }
+  .checkout-right {
+    display: none;
+  }
+  .header h1 {
+    font-size: 1.25rem;
+  }
+  .header p {
+    font-size: 0.75rem;
+  }
+  .left-container {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .main {
+    width: 100%;
+  }
+  .left-container {
+    font-size: 0.9rem;
+  }
+}

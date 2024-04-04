@@ -1,0 +1,28 @@
+.list-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  padding: 0 15px;
+}
+.list-item-header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.list-item-header .btn {
+  background-color: transparent;
+  border: none;
+}
+.list-item-header .clear {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.list-item-header .close {
+  margin-left: 25px;
+  cursor: pointer;
+  &:hover {
+    color: rgb(181, 181, 181);
+  }
+}

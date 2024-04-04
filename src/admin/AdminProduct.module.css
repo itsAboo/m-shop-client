@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container h1 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.container .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .form .form-control {
+  margin-bottom: 15px;
+}
+.container .form .btn {
+  height: 50px;
+  font-size: 1rem;
+}

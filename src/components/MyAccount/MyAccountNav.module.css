@@ -1,0 +1,20 @@
+.nav {
+  max-width: 200px;
+  padding: 0 30px;
+  border-right: 1px solid black;
+}
+.nav .nav-list .nav-list-items {
+  padding: 5px 0;
+  list-style: none;
+}
+.nav .nav-list .nav-list-items a {
+  color: rgb(143, 143, 143);
+  font-weight: 400;
+  &:hover {
+    color: rgb(0, 0, 0);
+  }
+}
+.nav .nav-list .nav-list-items a.active {
+  color: black;
+  font-weight: 500;
+}

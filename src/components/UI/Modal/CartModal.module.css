@@ -1,0 +1,145 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 555555555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .content {
+  background-color: white;
+  max-width: 1000px;
+  padding: 20px;
+  position: relative;
+  z-index: 55555;
+}
+.modal .content .close-btn {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+}
+.modal .content h1 {
+  margin-bottom: 10px;
+}
+.modal .content .wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.modal .content .left {
+  display: flex;
+  width: 500px;
+}
+.modal .content .left img {
+  object-fit: cover;
+  max-width: 200px;
+}
+.modal .content .left .details {
+  margin-left: 15px;
+}
+.details p {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.details .title {
+  color: black;
+  font-weight: 400;
+}
+.details .price {
+  color: black;
+  font-weight: 600;
+}
+.modal .content .right {
+  width: 400px;
+  flex: 1;
+  padding-left: 15px;
+  margin-left: 20px;
+  border-left: 1px solid black;
+}
+.right p {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.right .flex.price p {
+  color: black;
+  font-weight: 600;
+}
+.right .btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0 20px;
+  margin-top: 10px;
+}
+.arrow {
+  font-size: 32px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.modal .backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 555;
+}
+
+@media screen and (max-width: 1024px) {
+  .modal .content {
+    width: 80%;
+  }
+  .modal .content .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal .content .right {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+  }
+  .modal .content .left img {
+    max-width: 180px;
+    max-height: 180px;
+  }
+  .modal .content .left {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modal .content {
+    width: 100%;
+  }
+  .modal .content .close-btn {
+    right: 15px;
+  }
+  .modal .content h1 {
+    font-size: 1.5rem;
+  }
+  .modal .content .left img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  .modal .content .left {
+    width: 100%;
+  }
+}

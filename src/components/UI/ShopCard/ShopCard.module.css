@@ -1,0 +1,64 @@
+.card {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.card .card-img {
+  width: 100%;
+  max-height: 100%;
+  position: relative;
+  cursor: pointer;
+}
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .card-img p {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  font-size: 1em;
+}
+.card .card-img button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+}
+.card .card-footer {
+  padding: 5%;
+}
+.card .card-footer p:first-child {
+  font-size: 1em;
+  color: black;
+}
+.card .card-footer .category,
+.desc {
+  color: rgb(91, 91, 91);
+  font-size: 1em;
+  font-weight: 300;
+}
+.card-img .fav-icon {
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  .card-img .fav-icon {
+    font-size: 18px;
+  }
+  .card .card-img p {
+    font-size: 0.75em;
+  }
+  .card .card-footer .category,
+  .desc {
+    font-size: 0.75em;
+  }
+  .card .card-footer p:first-child {
+    font-size: 0.75em;
+  }
+}

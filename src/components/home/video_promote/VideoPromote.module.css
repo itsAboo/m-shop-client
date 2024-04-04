@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 950px;
+  position: relative;
+}
+.container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container .desc {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  right: 0;
+  color: white;
+}
+.container .desc h1 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.container .desc p {
+  padding: 2px 0;
+}
+.container .desc .btn {
+  margin-top: 10px;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+.container {
+  min-width: 70%;
+  margin: 0 auto;
+}
+.container h1 {
+  text-align: center;
+}
+.details {
+  margin-top: 30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding: 15px;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.card .left {
+  display: flex;
+}
+.card .left img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.card .left .desc {
+  margin-left: 15px;
+}
+.total-price {
+  text-align: end;
+}
+.total-price span {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.btn {
+  width: 50%;
+  height: 50px;
+  font-size: 1rem;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.btn .arrow {
+  font-size: 32px;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .container h1 {
+    font-size: 1.25rem;
+  }
+  .details {
+    box-shadow: none;
+    padding: 0;
+  }
+  .card .left img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .container p {
+    font-size: 0.9rem;
+  }
+  .total-price span {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 0.75rem;
+  }
+  .btn .arrow {
+    font-size: 24px;
+  }
+}

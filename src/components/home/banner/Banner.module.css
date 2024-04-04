@@ -1,0 +1,60 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+.slider {
+  width: 100%;
+  height: 600px;
+}
+.img-container {
+  height: 600px;
+  outline: none;
+}
+.img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container .next-prev-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+.container .prev {
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-100%);
+}
+.container .next {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-100%);
+}
+@media screen and (max-width: 768px) {
+  .slider {
+    max-height: 400px;
+  }
+  .img-container {
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slider {
+    max-height: 350px;
+  }
+  .img-container {
+    max-height: 350px;
+  }
+  .container .next-prev-btn {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,18 @@
+.list-header {
+  position: relative;
+}
+.list-header h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px 0;
+}
+.list-header button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

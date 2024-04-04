@@ -1,0 +1,98 @@
+.container {
+  width: 500px;
+  padding: 25px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container h1 {
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form .name-lastname {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+.form .email {
+  margin-bottom: 10px;
+}
+.form .password {
+  margin-bottom: 15px;
+}
+.form .password .pw-helper-txt {
+  margin-top: -10px;
+}
+.form .desc {
+  margin-bottom: 15px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+.form .btn {
+  background-color: black;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.container .other-signup {
+  width: 100%;
+}
+.container .other-signup p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.container .other-signup .other-signup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  font-size: 1rem;
+  position: relative;
+}
+.container .other-signup button .gg-icon {
+  position: absolute;
+  left: 5%;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 10px 30px;
+    margin-top: 10px;
+  }
+  .container h1 {
+    font-size: 1.25rem;
+  }
+  .form .email {
+    margin-bottom: 5px;
+  }
+  .form .password {
+    margin-bottom: 10px;
+  }
+}

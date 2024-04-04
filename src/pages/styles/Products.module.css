@@ -1,0 +1,114 @@
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 50px;
+  margin-top: 50px;
+}
+.container h1 {
+  margin-bottom: 10px;
+}
+.top-bar {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black;
+}
+.top-bar .btn {
+  width: 150px;
+  padding: 0 10px;
+  height: 38px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  grid-template-rows: 475px;
+  grid-area: 10px;
+}
+.card-container .card {
+  width: 380px;
+  height: 475px;
+  margin: 0 auto;
+}
+.mobile-filter-btn {
+  background: transparent;
+  border: none;
+  display: none;
+  &:focus {
+    background-color: aliceblue;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+  .container h1 {
+    display: none;
+  }
+  .top-bar .btn {
+    display: none;
+  }
+  .mobile-filter-btn {
+    display: block;
+  }
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .card-container .card {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+  .container h1 {
+    display: none;
+  }
+  .top-bar .btn {
+    display: none;
+  }
+  .mobile-filter-btn {
+    display: block;
+  }
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-bottom: 15px;
+  }
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+  }
+  .card-container h1 {
+    display: block;
+    font-size: 1.25rem;
+  }
+  .card-container .card {
+    width: 100%;
+    height: auto;
+  }
+}

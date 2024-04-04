@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  margin-top: 30px;
+}
+.container h3 {
+  margin: 20px 0;
+}
+.container .btn-group {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  height: 50px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  font-size: 32px;
+}
+.err-text {
+  margin-bottom: 20px;
+  color: rgb(234, 0, 0);
+}

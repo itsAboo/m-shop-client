@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex p:first-child {
+  padding-bottom: 5px;
+}
+.flex:first-of-type {
+  margin-top: 15px;
+}
+.flex:last-of-type {
+  margin-top: 15px;
+}
+.total {
+  font-weight: 500;
+}
+.tax {
+  font-weight: 300;
+}

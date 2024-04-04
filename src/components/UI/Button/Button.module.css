@@ -1,0 +1,36 @@
+#filled {
+  cursor: pointer;
+  background-color: black;
+  transition: transform 0.1s ease;
+  border: none;
+  color: white;
+  &:hover {
+    background-color: rgb(35, 35, 35);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+  &:disabled {
+    background-color: rgb(60, 60, 60);
+    cursor: no-drop;
+    transform: none;
+  }
+}
+#outlined {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  &:hover {
+    background-color: rgb(241, 241, 241);
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+  &:disabled {
+    background-color: rgb(205, 205, 205);
+    cursor: no-drop;
+    transform: none;
+  }
+}
