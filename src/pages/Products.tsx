@@ -25,6 +25,7 @@ export default function Products() {
     queryKey: ["product", Object.fromEntries(searchParams)],
     queryFn: ({ signal }) =>
       getProducts({ signal, query: Object.fromEntries(searchParams) }),
+    refetchOnWindowFocus: false,
   });
   const toggleFilter = (newOpen: boolean) => {
     setOpen(newOpen);
