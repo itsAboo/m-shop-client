@@ -36,9 +36,7 @@ export default function ShopCard(props: ShopCardProps) {
     if (!user || isError) {
       return navigate("/signin");
     }
-    console.log("Add");
     mutate({ productId: props.productId! });
-    console.log("Done");
   };
 
   const handleHoverImage = () => {
