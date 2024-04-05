@@ -17,8 +17,8 @@ interface CartCardProps {
   isUpdatingQuantity?: boolean;
   isDeletingItems?: boolean;
   onDelete: () => void;
-  onIncrease?: () => void;
-  onDecrease?: () => void;
+  onIncrease: () => void;
+  onDecrease: () => void;
 }
 
 export default function CartCard(props: CartCardProps) {
@@ -69,8 +69,13 @@ export default function CartCard(props: CartCardProps) {
         </div>
         <div className={classes["card-body-footer"]}>
           <button
-            disabled={props.isUpdatingQuantity}
-            onClick={props.onDecrease}
+            disabled={props.isUpdatingQuantity || disBtn}
+            onClick={() => {
+              if (Number(props.quantity) === 1) {
+                setDisBtn(true);
+              }
+              props.onDecrease();
+            }}
             className={classes.btn}
           >
             -
