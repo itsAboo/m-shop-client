@@ -75,8 +75,8 @@ a {
     background-color: rgb(75, 75, 75);
   }
   &:disabled {
-    pointer-events: none;
     cursor: no-drop;
+    background-color: rgb(75, 75, 75);
   }
 }
 .card .card-body .card-body-footer .input {
