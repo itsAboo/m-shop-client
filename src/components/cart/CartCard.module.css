@@ -74,6 +74,10 @@ a {
   &:hover {
     background-color: rgb(75, 75, 75);
   }
+  &:disabled {
+    pointer-events: none;
+    cursor: no-drop;
+  }
 }
 .card .card-body .card-body-footer .input {
   width: 50px;
