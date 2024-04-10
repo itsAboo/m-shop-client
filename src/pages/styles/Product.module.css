@@ -23,7 +23,7 @@
 }
 .mobile-header {
   display: none;
-  padding-left: 20px;
+  padding: 0 20px;
   font-weight: 300;
   margin-bottom: 20px;
 }
