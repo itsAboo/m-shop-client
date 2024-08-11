@@ -201,7 +201,8 @@ export default function SignIn() {
           disabled={
             inputForm.email.isError ||
             inputForm.password.isError ||
-            mutateErr.isErr
+            mutateErr.isErr ||
+            isPending
           }
           className={classes.btn}
         >

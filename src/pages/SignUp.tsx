@@ -301,7 +301,8 @@ export default function SignUp() {
             inputForm.password.isError ||
             inputForm.firstName.isError ||
             inputForm.lastName.isError ||
-            mutateErr.isErr
+            mutateErr.isErr ||
+            isPending
           }
           className={classes.btn}
         >
